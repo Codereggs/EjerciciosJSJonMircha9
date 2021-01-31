@@ -21,6 +21,7 @@ La clase recibirá un objeto al momento de instanciarse con los siguentes datos:
 
 * Géneros Aceptados: Action, Adult, Adventure, Animation, Biography, Comedy, Crime, Documentary ,Drama, Family, Fantasy, Film Noir, Game-Show, History, Horror, Musical, Music, Mystery, News, Reality-TV, Romance, Sci-Fi, Short, Sport, Talk-Show, Thriller, War, Western.
 */
+console.log("%cEjercicio 27", "font-weight:bold; font-size:12px");
 const generosAceptados = [
   "Action",
   "Adult",
@@ -55,7 +56,8 @@ class Pelicula {
   constructor({ id, titulo, director, anio, paises, genero, calificacion }) {
     this.id = id;
     this.titulo = titulo;
-    (this.director = director), (this.anio = anio);
+    this.director = director;
+    this.anio = anio;
     this.paises = paises;
     this.genero = genero;
     this.calificacion = calificacion;
@@ -198,7 +200,7 @@ class Pelicula {
 //Una película
 
 const cenicienta = new Pelicula({
-  id: "tt166119",
+  id: "tt1661199",
   titulo: "Cinderella",
   director: "Kenneth Branagh",
   anio: 1995,
@@ -245,3 +247,8 @@ tresPeliculas.forEach((x) => {
   let triPack = new Pelicula(x);
   triPack.fichaTecnica();
 });
+
+console.log(
+  "%cÚltima ronda de ejercicios hecha, gracias Jon, hecho por Codereggs",
+  "color:lightblue; font-size:20px"
+);
